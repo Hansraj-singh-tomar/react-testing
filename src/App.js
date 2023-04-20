@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import CommentForm from './components/CommentForm'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    // <div data-testid="custom-element" /> to catch element by id for testing purpose
+    <div data-testid="myrootdiv">  
+      {/* <h1>Testing Basics</h1>
+      <input type="text" />
+      <button>test button</button>
+      <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+      </ul> */}
+      <CommentForm/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
